@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+body {
+    margin: 0;
+}
+
+/* stabil mobil viewport */
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+#i4ne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Times New Roman, Times, serif;
+
+    position: fixed;
+    inset: 0 0 auto 0;
+
+    width: 100%;
+    z-index: 1000;
+
+    padding: 0 clamp(8px, 2vw, 24px);
+    background: rgba(0,0,0,0);
+}
+
+/* LOGO */
+#if11u {
+    height: clamp(90px, 11vw, 200px);
+    width: auto;
+}
+
+/* NAV */
+#i2pj {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex: 1;
+    margin-left: clamp(10px, 2vw, 40px);
+
+    font-family: "Aladin", display;
+}
+
+/* MENU ITEMS */
+#itkk,
+#i6gh,
+#imsy9,
+#ikcke,
+#i1foi {
+    font-size: clamp(14px, 2vw, 36px);
+    padding: clamp(2px, 0.6vw, 8px) clamp(4px, 1vw, 15px);
+    white-space: nowrap;
+    align-self: center;
+
+    transition: all 0.3s ease;
+}
+
+/* jobb headroom */
+#i1foi {
+    margin-right: clamp(16px, 4vw, 40px);
+}
+
+/* NAV LINKS RESET */
+#i2pj a {
+    text-decoration: none;
+}
+
+/* DEFAULT MENU COLOR */
+#itkk,
+#i6gh,
+#imsy9,
+#ikcke {
+    color: #f5caff;
+}
+
+/* CONTACT SPECIAL */
+#i1foi,
+#i1foi:link,
+#i1foi:visited,
+#i1foi:active {
+    color: #f6b83a;
+    border-radius: 25px 25px 25px 4px;
+}
+
+/* HERO */
+#izkbu {
+    background-image: url("../assets/pentek_kisret_km-14.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100dvh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+/* desktop hover */
+#itkk:hover,
+#i6gh:hover,
+#imsy9:hover,
+#ikcke:hover {
+    color: #f6b83a;
+}
+
+/* mobile tap animation */
+#itkk:active,
+#i6gh:active,
+#imsy9:active,
+#ikcke:active {
+    color: #f6b83a;
+    transition: color 0.25s ease;
+}
+
+/* CONTACT */
+#i1foi:hover {
+    background-color: #f6b83a;
+    box-shadow: 0 0 50px 8px rgba(255, 214, 131, 0.53);
+    color: #6a415d;
+}
+
+#i1foi:active {
+    background-color: #f6b83a;
+    box-shadow: 0 0 50px 8px rgba(255, 214, 131, 0.53);
+    color: #6a415d;
+    transition: all 0.25s ease;
+}
+
+#i1foi:hover {
+    background-color: #f6b83a;
+    border-radius: 25px 25px 25px 4px;
+    box-shadow: 0 0 50px 8px rgba(255, 214, 131, 0.53);
+    color: #6a415d;
+    outline: 2px solid rgba(255, 236, 197, 0.76);
+    transition: all 0.3s ease-in-out;
+}
+
+/* MOTTO */
+#in06f {
+    position: sticky;
+    top: clamp(90px, 11vw, 200px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Aladin", display;
+    color: #ffffff;
+
+    font-size: clamp(28px, 6vw, 62px);
+
+    padding: clamp(4px, 1.5vw, 8px) clamp(70px, 10vw, 100px);
+
+    margin: 0 auto;
+    margin-top: clamp(250px, 18vh, 500px);
+
+    border-radius: 10px;
+    box-shadow: 32px -2px 119px 0px rgb(255, 255, 255);
+
+    z-index: 1;
+}
+
+/* scrollbar elrejtés */
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.model-section {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  z-index: 2;
+
+  overflow: hidden; /* EZ a fontos */
+}
+
+model-viewer {
+  position: absolute;
+  top: 60%;   /* volt 65 vagy 80 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: clamp(100px, 60vw, 300px);
+  height: clamp(100px, 60vh, 300px);
+
+  background: transparent;
+
+  opacity: 0;
+  animation: fadeInModel 2.5s ease-out forwards;
+
+  pointer-events: auto;
+  touch-action: pan-y;
+}
+
+@keyframes fadeInModel {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#powered {
+    width: 100%;
+    background: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: clamp(30px, 6vh, 70px) 20px;
+}
+
+#powered-wrap {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 4vw, 40px);
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#powered-text {
+    font-family: "Aladin", display;
+    color: white;
+
+    font-size: clamp(28px, 5vw, 64px);
+}
+
+#powered-logo {
+    height: clamp(40px, 6vw, 80px);
+    width: auto;
+}

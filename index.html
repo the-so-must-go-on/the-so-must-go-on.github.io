@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Silex v3.6.4">
+    <link rel="stylesheet" href="/css/index-8aef3ec297667c9fef89145c834cfb1e2416f6bca6c90eaf388c9e5b5e282f4a.css" />
+
+    <!-- MODEL VIEWER -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+</head>
+
+<body id="ij2u">
+
+    <HEADER id="i4ne">
+        <img id="if11u" src="/assets/logo2.png" />
+        <NAV id="i2pj">
+            <a href="./index.html" id="itkk">HOME</a>
+            <a href="./bio.html" id="i6gh">BIO</a>
+            <a href="./action.html" id="imsy9">IN ACTION</a>
+            <a href="./crew.html" id="ikcke">CREW</a>
+            <a href="./contact.html" id="i1foi">CONTACT</a>
+        </NAV>
+    </HEADER>
+
+    <div id="izkbu">
+        <div id="in06f">"The Só Must Go On"</div>
+    </div>
+
+    <div class="model-section">
+        <model-viewer 
+            src="assets/model.glb"
+            camera-controls
+            auto-rotate
+            disable-zoom
+            shadow-intensity="1"
+            exposure="1"
+            environment-image="neutral"
+            style="background: transparent;">
+        </model-viewer>
+    </div>
+
+ <!-- POWERED BY SECTION -->
+    <section id="powered">
+        <div id="powered-wrap">
+            <div id="powered-text">Powered by</div>
+            <a href="https://www.facebook.com/zsirkulipintyo" target="_blank" rel="noopener">
+            <img id="powered-logo" src="/assets/powered.png" />
+</a>
+        </div>
+    </section>
+
+<script>
+document.querySelectorAll('#i2pj a').forEach(link=>{
+  link.addEventListener('click', e=>{
+    e.preventDefault();
+    link.classList.add('active');
+    setTimeout(()=>window.location=link.href, 300);
+  });
+});
+</script>
+
+</body>
+</html>
