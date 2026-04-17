@@ -348,6 +348,30 @@ font-size:14px;
 
 }
 
+/* ===== MOBILE GRID BUBBLE CENTER ===== */
+
+@media (max-width:900px){
+
+.crew-bubble{
+top:50%;
+
+/* reset desktop oldalra nyitás */
+left:50% !important;
+right:auto !important;
+
+transform:translate(-50%, -50%);
+
+max-width:160px;
+text-align:left;
+}
+
+/* hover */
+.crew-member:hover .crew-bubble{
+opacity:1;
+}
+
+}
+
 
 /* ===== OVERLAP FIX ===== */
 
