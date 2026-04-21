@@ -449,9 +449,11 @@ gap:28px;
 }
 
 /* canvas kisebb */
-#image-slider,
+#image-slider{
+aspect-ratio:3/2;
+}
 #video-slider{
-aspect-ratio:4/3;
+aspect-ratio:16/9;
 }
 
 }
