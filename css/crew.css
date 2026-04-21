@@ -430,3 +430,21 @@ text-align:left;
     width: auto;
 }
 
+/* teljes oldal scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;   /* háttér */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;   /* fogantyú */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
